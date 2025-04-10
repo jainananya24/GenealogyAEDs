@@ -71,4 +71,5 @@ if serial_input:
             st.info("Part ASI-MS-00071 not found under this parent serial.")
 
 st.markdown("---")
-st.caption("Developed using free tools: GitHub + Streamlit")
+st.caption("For internal use only")
+st.caption("Avive Solutions, Inc")
