@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-
+st.markdown("---")
 st.set_page_config(page_title="Serial Number Search", layout="centered")
 
 st.title("🔍 Penang AED Genealogy Serial Search")
@@ -71,5 +71,4 @@ if serial_input:
             st.info("Part ASI-MS-00071 not found under this parent serial.")
 
 st.markdown("---")
-st.subheader("Ananya Jain")
 
