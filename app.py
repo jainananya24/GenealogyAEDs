@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-st.markdown("---")
+
 st.set_page_config(page_title="Serial Number Search", layout="centered")
 
 st.title("🔍 Penang AED Genealogy Serial Search")
