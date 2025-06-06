@@ -7,7 +7,7 @@ st.set_page_config(page_title="Serial Number Search", layout="centered")
 st.title("🔍 Penang AED Genealogy Serial Search")
 
 # Folder where your Excel files are stored (in your GitHub repo)
-FOLDER_PATH = "excel_files"
+FOLDER_PATH = "excel_file"
 
 @st.cache_data
 def load_all_data(folder_path):
