@@ -3,18 +3,18 @@ A simple and efficient web application built with Streamlit to search for compon
 
 # 📜 Description
 In manufacturing and assembly processes, it's crucial to maintain a clear record of which sub-components are installed in a parent unit. This is often referred to as product genealogy. This application solves the challenge of manually searching through numerous Excel spreadsheets to find this information.
-/
+>
 The "Penang AED Genealogy Serial Search" app provides a user-friendly interface to:
+>
+- Instantly search for a specific "Parent Serial Number" across all relevant Excel files.
+> 
+- Display all matching sub-components associated with that parent serial number.
+>
+- Automatically perform a multi-level trace-down for specific critical parts (e.g., ASI-MS-00071) to find their own sub-components.
+>
+- The application is built to be robust, handling potential file errors and ensuring that serial numbers are treated as text to avoid data type issues.
 
-Instantly search for a specific "Parent Serial Number" across all relevant Excel files.
-
-Display all matching sub-components associated with that parent serial number.
-
-Automatically perform a multi-level trace-down for specific critical parts (e.g., ASI-MS-00071) to find their own sub-components.
-
-The application is built to be robust, handling potential file errors and ensuring that serial numbers are treated as text to avoid data type issues.
-
-✨ Features
+# ✨ Features
 Centralized Searching: Searches all .xlsx files located in a designated folder.
 
 Fast & Efficient: Caches the loaded data to provide near-instant results on subsequent searches.
