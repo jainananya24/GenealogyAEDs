@@ -65,17 +65,17 @@ GenealogyAEDs/
 # 📊 Data Requirements
 For the application to work correctly, your Excel files must meet the following criteria:
 >
-File Format: Must be .xlsx.
+- File Format: Must be .xlsx.
 >
-Sheet Name: Must contain a sheet named exactly Genealogy.
+- Sheet Name: Must contain a sheet named exactly Genealogy.
 >
-Required Columns: The Genealogy sheet must contain at least the following columns:
+- Required Columns: The Genealogy sheet must contain at least the following columns:
 >
-Parent Part No
+- Parent Part No
 >
-Parent Serial No
+- Parent Serial No
 >
-Part No
+- Part No
 >
-Serial No
+- Serial No
 >
