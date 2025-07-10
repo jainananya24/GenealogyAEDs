@@ -1,11 +1,9 @@
-#Penang AED Genealogy Serial Search
-A simple and efficient web application built with Streamlit to search for component genealogy data within a collection of Excel files. This tool is designed to quickly trace the relationship between parent assemblies and their sub-components by searching for a parent serial number.
+# Penang AED Genealogy Serial Search
+A simple and efficient web application built with Streamlit to search for component genealogy data and lot number within a collection of Excel files. This tool is designed to quickly trace the relationship between parent assemblies and their sub-components by searching for a parent serial number.
 
-(Feel free to replace the placeholder above with a real screenshot of your application)
-
-📜 Description
+# 📜 Description
 In manufacturing and assembly processes, it's crucial to maintain a clear record of which sub-components are installed in a parent unit. This is often referred to as product genealogy. This application solves the challenge of manually searching through numerous Excel spreadsheets to find this information.
-
+/
 The "Penang AED Genealogy Serial Search" app provides a user-friendly interface to:
 
 Instantly search for a specific "Parent Serial Number" across all relevant Excel files.
