@@ -79,3 +79,8 @@ For the application to work correctly, your Excel files must meet the following 
 >
 - Serial No
 >
+
+# ✍️ Author
+This script was created by Ananya Jain.
+>
+Feel free to contribute to this project by submitting issues or pull requests.
