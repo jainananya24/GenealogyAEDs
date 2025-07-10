@@ -17,7 +17,7 @@ The "Penang AED Genealogy Serial Search" app provides a user-friendly interface 
 # ✨ Features
 - Centralized Searching: Searches all .xlsx files located in a designated folder.
 >
--Fast & Efficient: Caches the loaded data to provide near-instant results on subsequent searches.
+- Fast & Efficient: Caches the loaded data to provide near-instant results on subsequent searches.
 >
 - Specific Part Trace-Down: Automatically drills down to find details for key parts like ASI-MS-01550 and ASI-MS-01599 if their parent ASI-MS-00071 is found.
 >
@@ -40,78 +40,42 @@ The "Penang AED Genealogy Serial Search" app provides a user-friendly interface 
 >
 - Drill-Down Logic: If a match is found, it specifically looks for the component ASI-MS-00071. If this part exists, it uses its Serial No to perform a second search to find its own child components, displaying details for ASI-MS-01550 and ASI-MS-01599.
 
-# 🚀 Setup and Installation
-Follow these steps to get the application running on your local machine.
 
-1. Prerequisites
-Python 3.7+ installed on your system.
-
-pip (Python's package installer).
-
-2. Clone the Repository (Optional)
-If you are managing this project with Git, you can clone the repository.
-
-git clone <your-repository-url>
-cd <your-repository-folder>
-
-3. Install Dependencies
-This project uses several Python libraries. You can install them all using the provided requirements.txt file.
-
-Create a file named requirements.txt and add the following lines:
-
-streamlit
-pandas
-openpyxl
-
-Then, run this command in your terminal:
-
-pip install -r requirements.txt
-
-4. Folder Structure
+# Folder Structure
 The application expects a specific folder structure to work correctly. You must create a folder named excel_file in the same directory as your Python script (app.py or similar).
 
 GenealogyAEDs/
+>
 ├── excel_file/
+>
 │   ├── data_file_1.xlsx
+>
 │   ├── data_file_2.xlsx
+>
 │   └── ...
+>
 ├── app.py              <-- Streamlit script
+>
 └── requirements.txt
+>
 
-Important: Place all your genealogy Excel files inside the excel_file folder.
+- Important: Place all your genealogy Excel files inside the excel_file folder.
 
-▶️ How to Use
-Make sure your Excel files are in the excel_file directory.
 
-Open your terminal or command prompt.
-
-Navigate to the directory where your app.py script is located.
-
-Run the following command:
-
-streamlit run app.py
-
-(Replace app.py with the actual name of your Python script if it's different.)
-
-Your web browser will automatically open a new tab with the application running.
-
-Enter a "Parent Serial Number" in the search box and press Enter. The results will be displayed on the page.
-
-📊 Data Requirements
+# 📊 Data Requirements
 For the application to work correctly, your Excel files must meet the following criteria:
-
+>
 File Format: Must be .xlsx.
-
+>
 Sheet Name: Must contain a sheet named exactly Genealogy.
-
+>
 Required Columns: The Genealogy sheet must contain at least the following columns:
-
+>
 Parent Part No
-
+>
 Parent Serial No
-
+>
 Part No
-
+>
 Serial No
-
-Feel free to contribute to this project by submitting issues or pull requests.
+>
