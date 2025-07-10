@@ -106,7 +106,7 @@ with st.expander("ℹ️ About this App & How to Use"):
     st.markdown("""
         **How to use it:**
         
-        1.  **Enter a Serial Number:** Type or paste the `Parent Serial Number` you want to search for in the text box above.
+        1.  **Enter a Serial Number:** Type or paste the `Parent Serial Number (AED Serial Number)` you want to search for in the text box above.
         2.  **View Results:** The application will display all matching parts found in the Excel files.
         3.  **Check Drill-Down:** If specific parts like `ASI-MS-00071` are found, their sub-components will be displayed in separate sections below.
     """)
