@@ -15,32 +15,32 @@ The "Penang AED Genealogy Serial Search" app provides a user-friendly interface 
 - The application is built to be robust, handling potential file errors and ensuring that serial numbers are treated as text to avoid data type issues.
 
 # ✨ Features
-Centralized Searching: Searches all .xlsx files located in a designated folder.
+- Centralized Searching: Searches all .xlsx files located in a designated folder.
+>
+-Fast & Efficient: Caches the loaded data to provide near-instant results on subsequent searches.
+>
+- Specific Part Trace-Down: Automatically drills down to find details for key parts like ASI-MS-01550 and ASI-MS-01599 if their parent ASI-MS-00071 is found.
+>
+- User-Friendly Interface: Clean and simple UI powered by Streamlit.
+>
+- Error Handling: Gracefully handles missing folders, empty directories, and corrupted files.
+>
+- Data Integrity: Reads serial numbers as strings to prevent common Excel data type conversion errors (e.g., dropping leading zeros or converting to scientific notation).
 
-Fast & Efficient: Caches the loaded data to provide near-instant results on subsequent searches.
+# ⚙️ How It Works
+- Data Loading: On startup, the application scans the excel_file/ directory for any files ending with .xlsx.
+>
+- Aggregation: It reads the "Genealogy" sheet from each Excel file, treating the serial number columns as text, and concatenates them into a single, searchable pandas DataFrame. The source filename is added to each row for easy reference.
+>
+- Caching: The combined DataFrame is cached in memory. This means the Excel files are only read once, making subsequent searches much faster.
+>
+- User Input: The user enters a "Parent Serial Number" into the search box.
+>
+- Filtering & Display: The application filters the main DataFrame to find all rows where the Parent Serial No column matches the user's input.
+>
+- Drill-Down Logic: If a match is found, it specifically looks for the component ASI-MS-00071. If this part exists, it uses its Serial No to perform a second search to find its own child components, displaying details for ASI-MS-01550 and ASI-MS-01599.
 
-Specific Part Trace-Down: Automatically drills down to find details for key parts like ASI-MS-01550 and ASI-MS-01599 if their parent ASI-MS-00071 is found.
-
-User-Friendly Interface: Clean and simple UI powered by Streamlit.
-
-Error Handling: Gracefully handles missing folders, empty directories, and corrupted files.
-
-Data Integrity: Reads serial numbers as strings to prevent common Excel data type conversion errors (e.g., dropping leading zeros or converting to scientific notation).
-
-⚙️ How It Works
-Data Loading: On startup, the application scans the excel_file/ directory for any files ending with .xlsx.
-
-Aggregation: It reads the "Genealogy" sheet from each Excel file, treating the serial number columns as text, and concatenates them into a single, searchable pandas DataFrame. The source filename is added to each row for easy reference.
-
-Caching: The combined DataFrame is cached in memory. This means the Excel files are only read once, making subsequent searches much faster.
-
-User Input: The user enters a "Parent Serial Number" into the search box.
-
-Filtering & Display: The application filters the main DataFrame to find all rows where the Parent Serial No column matches the user's input.
-
-Drill-Down Logic: If a match is found, it specifically looks for the component ASI-MS-00071. If this part exists, it uses its Serial No to perform a second search to find its own child components, displaying details for ASI-MS-01550 and ASI-MS-01599.
-
-🚀 Setup and Installation
+# 🚀 Setup and Installation
 Follow these steps to get the application running on your local machine.
 
 1. Prerequisites
