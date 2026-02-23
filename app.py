@@ -68,7 +68,7 @@ if serial_input:
         response_match = df_responses[df_responses['Serial Number'] == parent_serial]
         
         if not response_match.empty:
-            st.success("✅ Work Order & Operator Found")
+            st.success("✅ Details Found")
             # Create columns to display the info neatly
             col1, col2 = st.columns(2)
             with col1:
