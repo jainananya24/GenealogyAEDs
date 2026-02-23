@@ -72,7 +72,7 @@ if serial_input:
             # Create columns to display the info neatly
             col1, col2 = st.columns(2)
             with col1:
-                st.metric("Work Order Number", response_match['Work Order Number'].iloc[0])
+                st.metric("Avive Work Order Number", response_match['Work Order Number'].iloc[0])
             with col2:
                 st.metric("Operator's Name", response_match["Operator's Name"].iloc[0])
         else:
