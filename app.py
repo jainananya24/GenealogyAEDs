@@ -111,10 +111,23 @@ if serial_input:
             st.info("Part ASI-MS-00071 not found under this parent serial.")
 
 st.markdown("---")
-with st.expander("ℹ️ About this App"):
-    st.markdown("""
+
+with st.expander("ℹ️ About this App & How to Use"):
+        st.markdown("""
         **Integrated Features:**
         - **Work Order & Operator Info:** Now pulls data from the *Electronic Data Collection Form*.
         - **Genealogy Search:** Searches Excel files for component breakdown.
         - **Automatic Drill-Down:** Automatically finds sub-components for key parts like `ASI-MS-00071`.
     """)
+    st.markdown("""
+        **What does this app do?**
+        This application allows you to search for component genealogy data within a collection of Excel files. 
+        You can enter a parent serial number to find all its associated sub-components. The app also automatically traces down specific critical parts to find their sub-components.
+    """)
+    st.markdown("""
+        **How to use it:**
+        1.  **Enter a Serial Number:** Type or paste the `Parent Serial Number (AED Serial Number)` you want to search for in the text box above.
+        2.  **View Results:** The application will display all matching parts found in the Excel files.
+        3.  **Check Drill-Down:** If specific parts like `ASI-MS-00071` are found, their sub-components will be displayed in separate sections below.
+    """)
+
