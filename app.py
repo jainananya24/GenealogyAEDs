@@ -113,7 +113,7 @@ if serial_input:
 st.markdown("---")
 
 with st.expander("ℹ️ About this App & How to Use"):
-        st.markdown("""
+    st.markdown("""
         **Integrated Features:**
         - **Work Order & Operator Info:** Now pulls data from the *Electronic Data Collection Form*.
         - **Genealogy Search:** Searches Excel files for component breakdown.
